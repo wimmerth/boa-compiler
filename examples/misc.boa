@@ -1,0 +1,7 @@
+squares = [x*x for x in range(10)];
+print([123, [squares, print(321)]]);
+print('Odd squares:', [x for x in squares if x % 2 == 1]);
+n = 5;
+composites = [j for i in range(2, n) for j in range(i*2, n*n, i)];
+print('Printing all primes below', n*n);
+[print(x) for x in range(2,n*n) if x not in composites]

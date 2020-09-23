@@ -1,0 +1,3 @@
+list = [print('first',True),[x-1 for x in range(11)],'second'];
+print(list,[]);
+print(print('third') in list)

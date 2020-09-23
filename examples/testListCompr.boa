@@ -1,0 +1,14 @@
+squares = [x*x for x in range(10)];
+print(squares);
+x = 1;
+overXandY = [print(x, y) for x in range(2,5) for y in [2, 'a', True]];
+print(x);
+multipleX = [x for x in [1,2,3] if x != 2 for x in [2]];
+print(multipleX);
+emptyList = [1 for x in []];
+print(emptyList);
+rangeTest = [x+y for x in range(0,11,5) for y in range(5)];
+rangeTest2 = range(-20,-31,-2);
+rangeTest3 = range(2,1);
+print(rangeTest,rangeTest2,rangeTest3);
+errorAfter4 = [print(x < 3) for x in [1,2,3,4,'oops']]

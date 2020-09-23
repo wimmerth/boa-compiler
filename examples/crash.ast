@@ -1,0 +1,2 @@
+[SExp (Call "print" [Oper Plus (Const (IntVal 2)) (Const (IntVal 2))]),
+ SExp (Var "hello")]

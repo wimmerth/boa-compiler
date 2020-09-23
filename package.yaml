@@ -1,0 +1,36 @@
+name: boa
+
+# The packages we (may) depend on
+dependencies:
+  - base             # For built-in functions like `length`
+  - containers       # For Data.Map, etc., if needed
+  - text             # For Data.Text, if needed
+  - parsec           # If needed; ReadP is already part of base
+  # For assignment 2, don't add anything else here
+
+# The Boa libraries
+library:
+  source-dirs: src
+  exposed-modules:
+    - BoaAST
+    - BoaInterp
+    - BoaParser
+
+executable:
+  source-dirs:
+    - src
+    - app
+  main: Main.hs
+
+# Sample test suite
+tests:
+  my-test-suite:
+    main: Test.hs
+    source-dirs: tests
+    dependencies: # not all may be relevant
+      - boa
+      - tasty
+      - tasty-hunit
+      - QuickCheck
+      - tasty-quickcheck
+      # You may add other LTS packages here, if really appropriate

@@ -1,0 +1,20 @@
+/home/wimmerth/Documents/ap/week3/code/boa-compiler/package.yaml:
+  hash: b40c43bb74aa3a001d0d311f5490baf7b4193e94ecffd7ae90c91993342275a1
+  size: 799
+  modtime: 1600253784
+/home/wimmerth/Documents/ap/week3/code/boa-compiler/src/BoaAST.hs:
+  hash: 8f6baeb4897b7bf250ac6cbccf0703a635673a6d55b6257ded1b3bbec3858745
+  size: 695
+  modtime: 1599468134
+/home/wimmerth/Documents/ap/week3/code/boa-compiler/boa.cabal:
+  hash: a454d92b00678b75f2ecf98d46ed4ca18272bd7250f1e0f2470dff76514e6780
+  size: 1082
+  modtime: 1600884375
+/home/wimmerth/Documents/ap/week3/code/boa-compiler/src/BoaParser.hs:
+  hash: e6d7f495acddfdea5b585caf8161f7a4e80a12c913eef0fa8f3a10b0b730d5c9
+  size: 7914
+  modtime: 1600852208
+/home/wimmerth/Documents/ap/week3/code/boa-compiler/src/BoaInterp.hs:
+  hash: ef4d046fe512a696227babdc7e7d4d62e73fa991488b0c323e9f9b47738e7488
+  size: 7089
+  modtime: 1600438519

@@ -1,0 +1,24 @@
+[SDef "squares"
+      (Compr (Oper Times (Var "x") (Var "x"))
+             [CCFor "x" (Call "range" [Const (IntVal 10)])]),
+ SExp (Call "print" [List [Const (IntVal 123),
+                           List [Var "squares",
+                                 Call "print" [Const (IntVal 321)]]]]),
+ SExp (Call "print" [Const (StringVal "Odd squares:"),
+                     Compr (Var "x") [CCFor "x" (Var "squares"),
+                                      CCIf (Oper Eq (Oper Mod (Var "x")
+                                                              (Const (IntVal 2)))
+                                                    (Const (IntVal 1)))]]),
+ SDef "n" (Const (IntVal 5)),
+ SDef "composites"
+      (Compr (Var "j") [CCFor "i" (Call "range" [Const (IntVal 2),Var "n"]),
+                        CCFor "j" (Call "range" [Oper Times (Var "i")
+                                                            (Const (IntVal 2)),
+                                                 Oper Times (Var "n") (Var "n"),
+                                                 Var "i"])]),
+ SExp (Call "print" [Const (StringVal "Printing all primes below"),
+                     Oper Times (Var "n") (Var "n")]),
+ SExp (Compr (Call "print" [Var "x"])
+             [CCFor "x" (Call "range" [Const (IntVal 2),
+                                       Oper Times (Var "n") (Var "n")]),
+              CCIf (Not (Oper In (Var "x") (Var "composites")))])]

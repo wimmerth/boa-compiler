@@ -1,0 +1,5 @@
+[
+SDef "list" (List [Call "print" [Const (StringVal "first"),Const TrueVal], Compr (Oper Minus (Var "x") (Const (IntVal 1))) [CCFor "x" (Call "range" [Const (IntVal 11)])], Const (StringVal "second")]),
+SExp (Call "print" [Var "list",List []]),
+SExp (Call "print" [Oper In (Call "print" [Const (StringVal "third")]) (Var "list")])
+]
